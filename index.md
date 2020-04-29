@@ -8,28 +8,16 @@ layout: default
  
 ### Noise-based 2D Fire
 We used multiple Perlin noise textures and interpolated their product with a standard u-v texture. We then took Gaussian Blob samples to simulate the features of fire. Lastly, we applied a color gradient to give an orange color to the blob.
-<!-- <div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="assets/images/fire.png" align="middle" width="400px"/>
-        <figcaption align="middle">Rendering Result</figcaption>
-      </td>
-      <td>
-        <img src="assets/images/sim_pipeline.png" align="middle" width="400px"/>
-        <figcaption align="middle">Visualization of the simulation and rendering pipeline. </figcaption>
-      </td>    
-  </table>
-</div> -->
+
 
 <div align="middle">
 <img src="assets/images/fire.png" width="480px" />
-<figcaption align="middle">  </figcaption>
+<figcaption align="middle"> Rendering Result </figcaption>
 </div> 
 
 <div align="middle">
 <img src="assets/images/sim_pipeline.png" width="480px" />
-<figcaption align="middle">  </figcaption>
+<figcaption align="middle"> Visualization of the simulation and rendering pipeline. </figcaption>
 </div> 
 
 
