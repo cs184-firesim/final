@@ -11,12 +11,12 @@ We used multiple Perlin noise textures and interpolated their product with a sta
 
 
 <div align="middle">
-<img src="assets/images/fire.png" width="480px" />
+<img src="assets/images/fire.png" align="middle" width="480px" />
 <figcaption align="middle"> Rendering Result </figcaption>
 </div> 
 
 <div align="middle">
-<img src="assets/images/sim_pipeline.png" width="480px" />
+<img src="assets/images/sim_pipeline.png" align="middle" width="480px" />
 <figcaption align="middle"> Visualization of the simulation and rendering pipeline. </figcaption>
 </div> 
 
