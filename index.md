@@ -48,8 +48,8 @@ The main difficulty of our implementation came from debugging the propagation of
 
 ## Future Goals 
 
-In the next stage, we would like to introduce the buoyant force, an attribute used in the simulation of smoke and fire. The buoyant force is influenced by temperature and density, and it changes the velocity of molecules to make the simulation more realistic. 
-We also expect to generate a GIF or a real-time application to render the simulations and incorporate some environmental objects in our rendering. 
+In the next stage, we would like to complete the implementation of our simulation and rendering engine. We would introduce the vorticity constraint, which preserves the curling behavior of the fire. Additionally, we will simulate and render fuel level and smoke to make the fire look more realistic.
+Finally, we also expect to generate a GIF or a real-time application to render the simulations and incorporate some environmental objects in our rendering. 
 
 
 ## Presentation Slides Link
