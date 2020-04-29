@@ -58,9 +58,12 @@ In the next stage, we would like to introduce the buoyant force, an attribute us
 We also expect to generate a GIF or a real-time application to render the simulations and incorporate some environmental objects in our rendering. 
 
 
+## Presentation Slides Link
+
+https://docs.google.com/presentation/d/1p8Mq5FJ8h6zP2ontchP7ci2boV2jzp6p15G_GkCUlQo/edit?usp=sharing
+
 ## Video Link 
 https://www.youtube.com/watch?v=jdkjiDlUR0A&feature=youtu.be 
-
 
 ## Resources and References
 
