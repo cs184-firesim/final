@@ -37,13 +37,8 @@ The second term simulates how pressure gathers and generates force and provide a
 When time advanced, we computed the advection and divergence based. Based on the interaction between neighboring molecules, we propagated the changes in temperature, pressure, and velocity correspondingly. We then updated the values in each 3D texture and rendered the resulting molecules to the screen with Unity. <br/>
 
 <div align="middle">
-  <table style="width=100%">
-    <tr>
-      <td>
-        <img src="assets/images/sim_box.png" align="middle" width="400px"/>
-        <figcaption align="middle">The green color represents the propogation of velocity.</figcaption>
-      </td>    
-  </table>
+   <img src="assets/images/sim_box.png" align="middle" width="400px"/>
+   <figcaption align="middle">The green color represents the propogation of velocity.</figcaption>
 </div>
 
 
