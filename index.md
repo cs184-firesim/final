@@ -19,7 +19,7 @@ In the formula, u is the velocity, p is the pressure, ρ is the density of the m
 The second term simulates how pressure gathers and generates force and provide accelerations to the surrounding molecules. <br/>
 When time advances, we compute the advection and divergence based. Based on the interaction between neighboring molecules, we propagate the changes in temperature, pressure, and velocity correspondingly. We then update the values in each 3D texture and render the resulting molecules to the screen. <br/>
 
-<div align="center">
+<!-- <div align="center">
 <img src="assets/images/fire.png" width="480px" />
 <figcaption align="middle"> Rendering Result </figcaption>
 </div> 
@@ -32,8 +32,34 @@ When time advances, we compute the advection and divergence based. Based on the 
 <div align="center">
 <img src="assets/images/sim_pipeline.png" width="480px" />
 <figcaption align="middle"> Visualization of the simulation and rendering pipeline. </figcaption>
-</div> 
+</div>  -->
  
+
+<div align="middle">
+  <table style="width=100%">
+    <tr>
+      <td>
+        <img src="assets/images/fire.png" align="middle" width="400px"/>
+        <figcaption align="middle">Rendering Result</figcaption>
+      </td>
+      <td>
+        <img src="assets/images/sim_box.png" align="middle" width="400px"/>
+        <figcaption align="middle">The green color represents the propogation of density</figcaption>
+      </td>
+
+<td>
+        <img src="assets/images/sim_pipeline.png" align="middle" width="400px"/>
+        <figcaption align="middle">Visualization of the simulation and rendering pipeline</figcaption>
+      </td>
+
+
+
+
+    
+  </table>
+</div>
+
+
 ## Challenges
 
 The main difficulty of our implementation comes from debugging the propagation of the attributes across timestamps. Unity is not designed to accommodate print debugging so we created a script in Python to calculate the values for a 2D fire simulation. It turns out that the values propagated as expected, which proved that our formula was correctly implemented. We then created a debugging shader to fill in empty textures so that we can see how the values advance in our model. 
