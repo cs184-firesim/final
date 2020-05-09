@@ -12,7 +12,7 @@ Our 2D fire is implemented with panning Voronoi noise and Perlin noise, while ou
 We measured our rendering effects and performance on an NVIDIA 2060 graphics card and obtained near real-time results.
 
 <div align="middle">
-<img src="assets/images/fire.png" align="middle" width="270px" />
+<img src="assets/images/fire.png" align="middle" width="260px" />
 <img src="assets/images/3dfire.png" align="middle" width="300px" />
 <figcaption align="middle">Snapshots of our fire effects</figcaption>
 </div> 
@@ -98,7 +98,7 @@ particles that are randomly generated at the bottom of the fire with Perlin nois
 Our raymarching procedure detects these particles and add a small glowing aura around them to make them appear realistic.
 
 <div align="middle">
-<img src="assets/images/ember.png" align="middle" width="480px"/>
+<img src="assets/images/ember.png" align="middle" width="400px"/>
 <figcaption align="middle"> Ember effect of our rendered fire</figcaption>
 </div>
 
@@ -137,10 +137,10 @@ University of North Carolina at Chapel Hill, https://developer.download.nvidia.c
 https://github.com/Scrawk/GPU-GEMS-3D-Fluid-Simulation
 
 # Contributions
-*Ziyao Zhang*: Created rendering pipeline and ray-marching engine for volumetric rendering, made presentation videos
+**Ziyao Zhang**: Created rendering pipeline and ray-marching engine for volumetric rendering, made presentation videos
 
-*Eric Ge*: worked on 2D fire, HLSL shaders, simulation kernels and special effects.
+**Eric Ge**: worked on 2D fire, HLSL shaders, simulation kernels and special effects.
 
-*Debbie Liang*: helped implement the simulation process, wrote documentations 
+**Debbie Liang**: helped implement the simulation process, wrote documentations 
 
 
