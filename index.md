@@ -48,22 +48,24 @@ We then update the values in each 3D texture and render the resulting volume to 
 For the external force field of the Navier Stokes equation, we simulated both buoyant force and vorticity force using the following equations:
 
 <div align="middle">
-<img src="assets/images/temperature.png" align="middle" />
+<img src="assets/images/temperature.png" align="middle" width="300px"/>
 <figcaption align="middle"> Formula for simulating buoyancy</figcaption>
 </div> 
 
 <div align="middle">
 <img src="assets/images/vorticity-0.jpg" align="middle" />
 <figcaption align="middle"> Formula for simulating vorticity (1/3)</figcaption>
-</div>
-<div align="middle">
+
 <img src="assets/images/vorticity-1.jpg" align="middle" />
 <figcaption align="middle"> Formula for simulating vorticity (2/3)</figcaption>
-</div> 
-<div align="middle">
+
 <img src="assets/images/vorticity-2.jpg" align="middle" />
 <figcaption align="middle"> Formula for simulating vorticity (3/3)</figcaption>
 </div>  
+
+The buoyant force is influenced by temperature and density, and it changes the velocity of molecules to make the simulation more realistic. With a higher temperature, the molecules will rise with a larger velocity. 
+The other force that we applied to our molecules is vorticity force. This force helps us restore some of the curling behavior of smoke that was lost due to the discrete nature of the simulation.
+
 #### Rendering
 
 ## Results
