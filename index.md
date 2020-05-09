@@ -114,9 +114,33 @@ TODO: VIDEO HERE
 
 LINK: 
 
-<div align="middle">
-<img src="assets/images/fire.png" align="middle" width="480px" />
-<figcaption align="middle"> Rendering Result </figcaption>
-</div> 
+## Problems & Lessons Learned
+The main difficulty of our implementation came from debugging the propagation of the attributes across timestamps. Unity is not designed to accommodate print debugging so we created a script in Python to calculate the values for a 2D fire simulation. It turned out that the values propagated as expected, which proved that our formula was correctly implemented. We then created a debugging shader, which fills in empty textures when the value that we are testing passes a certain threshold. With the debugging shader, we could easily visualize how the values advanced in our model. 
+
+Some static numerical values cannot be assigned in computing kernels directly. For example, our time step value remained to be zero when we tried to assign it to be a non-zero value in our computing kernel and stopped other values from propagating when time advances. The values of velocity and pressure remained to be zero for a long time and we didn’t know why. We found this bug with our debugging shader. We then explicitly declared these numerical values inside the C# driver file and passed into the computing kernels. 
+
+## References
+For the coding part, we referred to the 2D smoke simulation pipeline in this student project (https://rachelbhadra.github.io/smoke_simulator/index.html), the 2D fire documentation in this NVIDIA tutorial (https://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html), and the 3D molecule simulation architecture in this textbook (https://www.cs.cmu.edu/~kmcrane/Projects/GPUFluid/paper.pdf). None of these references provided 3D fire simulation code. We used 2D architecture as our code framework and raised the dimension of our textures to 3D. We also translated all the formulas needed into Unity kernels and implemented a driver processor to connect the physical simulation with the rendering process. 
+
+Addtional References:
+
+1. “Understanding Perlin Noise” adrian's soapbox， https://flafla2.github.io/2014/08/09/perlinnoise.html 
+2. “Real-Time Simulation and Rendering of 3D Fluids”, Keenan Crane, Ignacio Llamas, Sarah Tariq
+https://www.cs.cmu.edu/~kmcrane/Projects/GPUFluid/paper.pdf  
+3. “GPU Gems - Chapter 38. Fast Fluid Dynamics Simulation on the GPU”, Mark J. Harris,
+University of North Carolina at Chapel Hill, https://developer.download.nvidia.com/books/HTML/gpugems/gpugems_ch38.html
+4. “Smoke Simulator”, Rachel Bhadra, Jonathan Ngan, Kenneth Tsai, https://rachelbhadra.github.io/smoke_simulator/index.html
+5. “Creating a Volumetric Ray Marcher”, Ryan Bruckshttps://shaderbits.com/blog/creating-volumetric-ray-marcher 
+6. “Raymarching Workshop Course Outline”, Electric Square https://github.com/electricsquare/raymarching-workshop
+7. “Fluids-2D”, Mattias Harrysson, https://github.com/mharrys/fluids-2d Fluids-2D, by Mattias Harrysson
+8. “GPU-GEMS-3D-Fluid-Simulation”, Justin Scrawk
+https://github.com/Scrawk/GPU-GEMS-3D-Fluid-Simulation
+
+# Contributions
+*Ziyao Zhang*: Created rendering pipeline and ray-marching engine for volumetric rendering, made presentation videos
+
+*Eric Ge*: worked on 2D fire, HLSL shaders, simulation kernels and special effects.
+
+*Debbie Liang*: helped implement the simulation process, wrote documentations 
 
 
